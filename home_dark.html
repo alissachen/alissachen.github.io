@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> home </title>
+		<link rel="stylesheet" type="text/css" href="assets/css/home_dark.css">
+		<script src="assets/js/script.js"></script>
+
+	</head>
+
+	<style>A {text-decoration: none;} </style>
+
+	<body>
+		<header>
+			<div class="content">
+				<h1> hi, my name is alissa. </h1>
+	
+			</div>
+		</header>
+
+		<p class="text anim-typewriter"> and i like to take photos! </p> 
+
+		<div class= "switch">
+			<a href="index.html">
+			<img src="assets/imgs/nightbutton.png" class="nightbutton" alt="">
+			</a>
+		</div>
+
+		<div class="menu">
+			<div class = "menu-button">
+				<a href="bay_area.html">
+					<h2> BAY AREA </h2>
+				</a>
+			</div>
+			<div class= "menu-button">
+				<a href="new_york.html">
+					<h2> NEW YORK </h2>
+				</a>
+			</div>
+		</div>
+
+		<div class = 'star1'>
+			<img src="assets/imgs/star.png">
+		</div>
+		<div class = 'star2'>
+			<img src="assets/imgs/star.png">
+		</div>
+		<div class = 'star3'>
+			<img src="assets/imgs/star.png">
+		</div>
+		<div class = 'star4'>
+			<img src="assets/imgs/star.png">
+		</div>
+		<div class = 'star5'>
+			<img src="assets/imgs/star.png">
+		</div>
+		<div class = 'star6'>
+			<img src="assets/imgs/star.png">
+		</div>
+		<div class = 'star7'>
+			<img src="assets/imgs/star.png">
+		</div>
+		<div id="container"> 
+		<div id = 'shootingstar'>
+			<img src="assets/imgs/shootingstar.png">
+		</div>
+		</div>
+
+		<script> 
+		function moveStar() {
+	  		var elem = document.getElementById("shootingstar");   
+	  		var pos = 0;
+	  		var id = setInterval(frame, 10);
+	  		function frame() {
+	    	if (pos == 600) {
+	      		clearInterval(id);
+	    	} else {
+	      		pos++; 
+	      		elem.style.top = pos + 'px'; 
+	      		elem.style.left = pos + 'px'; 
+	    			}
+	  			}
+			}	
+		</script>
+
+		<script>moveStar();</script> 
+		
+
+	</body>
+
+</html>
